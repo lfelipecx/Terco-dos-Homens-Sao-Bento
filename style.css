@@ -50,7 +50,7 @@ html[data-theme="dark"] .editor-note{color:#c9bda8}html[data-theme="dark"] .quee
 html[data-theme="dark"] .tiny-label,html[data-theme="dark"] .prayer-nav a,html[data-theme="dark"] .prayers details,html[data-theme="dark"] .meeting-card,html[data-theme="dark"] .event-card{border-color:var(--border)}
 html[data-theme="dark"] .tabs button[aria-selected=true]{color:var(--heading)}html[data-theme="dark"] .lyric-block.refrain{background:#253249}
 html[data-theme="dark"] .menu-toggle{border-color:var(--border)}html[data-theme="dark"] .menu-toggle span{background:var(--ink)}html[data-theme="dark"] .gallery-arrow{color:var(--ink)}html[data-theme="dark"] .menu a{border-color:var(--border)}
-html[data-theme="dark"] .brand-logo{background:#f8f5ee;border-radius:4px}
+html[data-theme="dark"] .brand-logo{background:transparent;border-radius:0}
 .hero h1,.queen-section h2{color:#fff}.queen-card h3{color:#f0d09b}
 @media(max-width:850px){.menu{background:var(--surface)}.nav-wrap>.menu{margin-left:0}}
 @media(max-width:680px){.header-controls{gap:8px}.nav-wrap{gap:12px}}
