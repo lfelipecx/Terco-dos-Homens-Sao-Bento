@@ -37,3 +37,21 @@
 .queen-image{margin:28px 0 0;max-width:310px}.queen-image img{display:block;width:100%;height:auto;border:1px solid #bda16d;box-shadow:0 18px 36px #060e2070}.queen-image figcaption{font-size:.8rem;color:#d9c9ad;line-height:1.5;margin-top:10px}.queen-grid{align-items:start}@media(max-width:680px){.queen-image{max-width:270px;margin:25px auto 34px}.queen-image figcaption{text-align:center}}
 
 .song-list{align-items:start}.song-lyrics{margin-top:20px}.song-lyrics summary{cursor:pointer;font-weight:700;color:var(--navy);padding:10px 0;min-height:44px}.lyric-block{margin:18px 0;padding:0 10px}.lyric-block strong{font-size:.8rem;letter-spacing:.05em;color:var(--gold-dark)}.lyric-block p{white-space:pre-line;margin:8px 0;line-height:1.8}.lyric-block.refrain{background:#eee6d6;border-left:3px solid var(--gold);padding:14px 16px}.lyric-block.refrain p{font-weight:650}
+/* Temas claro e escuro */
+:root{--page:#fff;--surface:#fff;--heading:#101e35;--border:#ded6c8;color-scheme:light}
+html[data-theme="dark"]{--page:#0c1625;--surface:#17243a;--heading:#f0e7d5;--ink:#e2e9f2;--muted:#b3bfd0;--cream:#121f32;--sand:#34425a;--gold-dark:#e1bd7d;--border:#42516a;color-scheme:dark}
+body{background:var(--page)}
+.header,.meeting-strip,.meeting-card,.event-card,.prayer-nav a,.prayers details,.contact-links .pending,.map-card,.gallery-arrow,.skip{background:var(--surface);border-color:var(--border)}
+h2,h3,.time,.empty-event strong,.mystery-panel h4,.prayers summary,.song-lyrics summary,.text-link,.contact-section address,.map-card-footer strong{color:var(--heading)}
+.header-controls{display:flex;align-items:center;gap:12px}.nav-wrap>.menu{margin-left:auto}
+.theme-toggle{display:grid;place-items:center;flex-shrink:0;width:48px;height:48px;border:1px solid var(--border);border-radius:50%;background:var(--surface);color:var(--heading);cursor:pointer;transition:background-color .2s,border-color .2s}
+.theme-toggle:hover{background:var(--cream);border-color:var(--gold-dark)}.theme-toggle svg{width:23px;height:23px}.theme-sun{display:none}html[data-theme="dark"] .theme-sun{display:block}html[data-theme="dark"] .theme-moon{display:none}
+html[data-theme="dark"] .editor-note{color:#c9bda8}html[data-theme="dark"] .queen-card .editor-note{color:#ddd1bd}
+html[data-theme="dark"] .tiny-label,html[data-theme="dark"] .prayer-nav a,html[data-theme="dark"] .prayers details,html[data-theme="dark"] .meeting-card,html[data-theme="dark"] .event-card{border-color:var(--border)}
+html[data-theme="dark"] .tabs button[aria-selected=true]{color:var(--heading)}html[data-theme="dark"] .lyric-block.refrain{background:#253249}
+html[data-theme="dark"] .menu-toggle{border-color:var(--border)}html[data-theme="dark"] .menu-toggle span{background:var(--ink)}html[data-theme="dark"] .gallery-arrow{color:var(--ink)}html[data-theme="dark"] .menu a{border-color:var(--border)}
+html[data-theme="dark"] .brand-logo{background:#f8f5ee;border-radius:4px}
+.hero h1,.queen-section h2{color:#fff}.queen-card h3{color:#f0d09b}
+@media(max-width:850px){.menu{background:var(--surface)}.nav-wrap>.menu{margin-left:0}}
+@media(max-width:680px){.header-controls{gap:8px}.nav-wrap{gap:12px}}
+html[data-theme="dark"] .meeting-strip strong,html[data-theme="dark"] .meeting-strip a{color:var(--heading)}

@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#101e35">
   <meta name="description" content="Conheça o Terço dos Homens da Paróquia São Bento, em Samambaia, DF. Encontros às quartas-feiras, às 20h. Veja orações, mistérios e próximos eventos.">
   <title>Terço dos Homens | Paróquia São Bento — Samambaia, DF</title>
+  <script src="theme.js"></script>
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
@@ -18,8 +19,14 @@
   <header class="header" id="inicio">
     <div class="wrap nav-wrap">
       <a class="brand" href="#inicio" aria-label="Terço dos Homens Mãe Rainha, voltar ao início"><img class="brand-logo" src="assets/logo-principal.webp" alt="Terço dos Homens Mãe Rainha" width="100" height="110"></a>
-      <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-      <nav id="menu" class="menu" aria-label="Navegação principal"><a href="#sobre">O movimento</a><a href="#encontros">Encontros</a><a href="#rezar">Como rezar</a><a href="#oracoes">Orações</a><a href="#mae-rainha">Mãe Rainha</a><a href="#joao-pozzobon">João Pozzobon</a><a href="#contato">Contato</a></nav>
+      <nav id="menu" class="menu" aria-label="Navegação principal"><a href="#encontros">Encontros</a><a href="#oracoes">Orações</a><a href="#contato">Contato</a></nav>
+      <div class="header-controls">
+        <button class="theme-toggle" type="button" aria-label="Ativar tema escuro" aria-pressed="false" title="Ativar tema escuro">
+          <svg class="theme-moon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13A8.5 8.5 0 0 1 11 3.5a8.5 8.5 0 1 0 9.5 9.5Z"/></svg>
+          <svg class="theme-sun" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </header>
   <main id="conteudo">
