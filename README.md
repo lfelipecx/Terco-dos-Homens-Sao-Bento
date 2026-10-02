@@ -34,3 +34,4 @@ A fotografia de João Luiz Pozzobon é carregada do Wikimedia Commons e possui a
 ## Acessibilidade
 
 Menu móvel, navegação por âncoras, foco visível, textos alternativos, controles de galeria por teclado e respeito à preferência por movimento reduzido.
+
