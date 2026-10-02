@@ -55,3 +55,11 @@ html[data-theme="dark"] .brand-logo{background:#f8f5ee;border-radius:4px}
 @media(max-width:850px){.menu{background:var(--surface)}.nav-wrap>.menu{margin-left:0}}
 @media(max-width:680px){.header-controls{gap:8px}.nav-wrap{gap:12px}}
 html[data-theme="dark"] .meeting-strip strong,html[data-theme="dark"] .meeting-strip a{color:var(--heading)}
+/* O tema claro usa branco nas seções e superfícies de leitura. */
+html[data-theme="light"]{--page:#fff;--surface:#fff;--cream:#fff}
+html[data-theme="light"] .lyric-block.refrain{background:#fff;border:1px solid var(--border);border-left:3px solid var(--gold)}
+html[data-theme="light"] .queen-section{background:#fff;color:var(--ink)}
+html[data-theme="light"] .queen-section h2,html[data-theme="light"] .queen-card h3,html[data-theme="light"] .queen-card strong{color:var(--heading)}
+html[data-theme="light"] .queen-section .eyebrow.light,html[data-theme="light"] .queen-links a{color:var(--gold-dark)}
+html[data-theme="light"] .queen-card{background:#fff;border-color:var(--border)}
+html[data-theme="light"] .queen-card .editor-note,html[data-theme="light"] .queen-image figcaption{color:var(--muted)}
