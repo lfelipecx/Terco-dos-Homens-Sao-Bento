@@ -63,3 +63,12 @@ html[data-theme="light"] .queen-section h2,html[data-theme="light"] .queen-card 
 html[data-theme="light"] .queen-section .eyebrow.light,html[data-theme="light"] .queen-links a{color:var(--gold-dark)}
 html[data-theme="light"] .queen-card{background:#fff;border-color:var(--border)}
 html[data-theme="light"] .queen-card .editor-note,html[data-theme="light"] .queen-image figcaption{color:var(--muted)}
+
+/* Retorno à hero, com área de toque confortável em ambos os temas. */
+.hero#inicio{scroll-margin-top:0}
+html{scroll-padding-top:116px}
+.footer .back-to-top{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:12px 20px;border:1px solid var(--gold);border-radius:999px;background:#ffffff08;color:#f3d8a8;font-weight:700;text-decoration:none;transition:background-color .2s,color .2s,box-shadow .2s}
+.back-to-top svg{width:22px;height:22px;flex-shrink:0}
+.footer .back-to-top:hover{background:var(--gold);color:#101e35;box-shadow:0 5px 18px #0003}
+.footer .back-to-top:focus-visible{outline:3px solid #f3d8a8;outline-offset:5px}
+@media(max-width:680px){html{scroll-padding-top:90px}.footer .back-to-top{width:100%}}

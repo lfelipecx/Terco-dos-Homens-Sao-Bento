@@ -1,7 +1,6 @@
 /* Atualize estes dados confirmados. Deixe strings vazias para não exibir links pendentes. */
 const dados = {
-  whatsapp: '', // DDI + DDD + número, apenas dígitos. Exemplo fictício: '5561999999999'
-  instagram: '', // URL completa e oficial
+  instagram: 'https://www.instagram.com/tercodoshsbento/', // Perfil oficial
   facebook: '', // URL completa e oficial
   mapa: 'https://maps.app.goo.gl/PCznHpZzTqJ3mZYT8', // localização da paróquia no Google Maps
   eventos: [
@@ -204,9 +203,6 @@ if (!songs.length) {
 }
 function isHttpUrl(value) { try { const url = new URL(value); return ['https:', 'http:'].includes(url.protocol); } catch { return false; } }
 const contact = document.querySelector('#contact-links');
-if (/^\d{12,15}$/.test(dados.whatsapp)) {
-  const a = document.createElement('a'); a.href = `https://wa.me/${dados.whatsapp}`; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = 'Conversar pelo WhatsApp ↗'; contact.append(a);
-} else { const note = document.createElement('span'); note.className = 'pending'; note.textContent = 'WhatsApp: [INSERIR NÚMERO]'; contact.append(note); }
 for (const [name, url] of [['Instagram', dados.instagram], ['Facebook', dados.facebook]]) {
   if (isHttpUrl(url)) { const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = `${name} ↗`; contact.append(a); }
 }
