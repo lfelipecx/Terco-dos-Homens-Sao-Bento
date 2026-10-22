@@ -5,7 +5,13 @@ const dados = {
   facebook: '', // URL completa e oficial
   mapa: 'https://maps.app.goo.gl/PCznHpZzTqJ3mZYT8', // localização da paróquia no Google Maps
   eventos: [
-    // { data: '2026-10-07', horario: '20h', titulo: 'Título confirmado', local: 'Local confirmado', descricao: 'Descrição breve' },
+    {
+      data: '2026-10-23',
+      horario: 'Logo após a missa das 19h30',
+      titulo: 'Terço dos Homens Unificado',
+      local: 'Paróquia Santa Luzia — QS 304, conjunto 05, lote 01/03, Samambaia',
+      descricao: 'Participe conosco deste momento de oração e fraternidade.'
+    },
   ],
   cancoes: [
   {
