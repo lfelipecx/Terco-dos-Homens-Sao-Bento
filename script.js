@@ -24,7 +24,7 @@ const dados = {
       },
       {
         "rotulo": "Refrão",
-        "texto": "Ave, Maria! Ave, Maria!\nAve, Maria! Ave, Maria!"
+        "texto": "Ave, Maria! Ave, Maria!"
       },
       {
         "rotulo": "Estrofe 2",
@@ -32,7 +32,7 @@ const dados = {
       },
       {
         "rotulo": "Refrão",
-        "texto": "Ave, Maria! Ave, Maria!\nAve, Maria! Ave, Maria!"
+        "texto": "Ave, Maria! Ave, Maria!"
       },
       {
         "rotulo": "Estrofe 3",
@@ -40,7 +40,7 @@ const dados = {
       },
       {
         "rotulo": "Refrão",
-        "texto": "Ave, Maria! Ave, Maria!\nAve, Maria! Ave, Maria!"
+        "texto": "Ave, Maria! Ave, Maria!"
       },
       {
         "rotulo": "Estrofe 4",
