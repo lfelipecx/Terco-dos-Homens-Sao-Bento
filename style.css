@@ -72,3 +72,10 @@ html{scroll-padding-top:116px}
 .footer .back-to-top:hover{background:var(--gold);color:#101e35;box-shadow:0 5px 18px #0003}
 .footer .back-to-top:focus-visible{outline:3px solid #f3d8a8;outline-offset:5px}
 @media(max-width:680px){html{scroll-padding-top:90px}.footer .back-to-top{width:100%}}
+
+/* Perfil da comunidade no Instagram */
+.contact-links .instagram-button{display:inline-flex;align-items:center;gap:12px;min-height:60px;padding:12px 20px;border:1px solid #b1437b;border-radius:14px;background:linear-gradient(120deg,#6638a5,#a63279 62%,#b8444e);color:#fff;box-shadow:0 5px 15px #8c367323;transition:box-shadow .2s,filter .2s}
+.contact-links .instagram-button:hover{background:linear-gradient(120deg,#58308f,#902568 62%,#a53841);box-shadow:0 7px 20px #8c367338}
+.instagram-button svg{width:28px;height:28px;flex-shrink:0}
+.instagram-button>span{display:flex;flex-direction:column;line-height:1.4}
+.instagram-button small{font-size:.875rem;font-weight:400;color:#fff}

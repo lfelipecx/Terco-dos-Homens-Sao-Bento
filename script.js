@@ -204,10 +204,14 @@ if (!songs.length) {
 function isHttpUrl(value) { try { const url = new URL(value); return ['https:', 'http:'].includes(url.protocol); } catch { return false; } }
 const contact = document.querySelector('#contact-links');
 for (const [name, url] of [['Instagram', dados.instagram], ['Facebook', dados.facebook]]) {
-  if (isHttpUrl(url)) { const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = `${name} ↗`; contact.append(a); }
+  if (isHttpUrl(url)) { const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer'; if (name === 'Instagram') {
+      a.className = 'instagram-button';
+      a.setAttribute('aria-label', 'Instagram do Terço dos Homens (abre em nova aba)');
+      a.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span>Instagram<small>@tercodoshsbento</small></span>';
+    } else { a.textContent = name; }
+    contact.append(a); }
 }
 if (!isHttpUrl(dados.instagram) && !isHttpUrl(dados.facebook)) { const note = document.createElement('span'); note.className = 'pending'; note.textContent = 'Redes sociais: [INSERIR LINKS]'; contact.append(note); }
-if (isHttpUrl(dados.mapa)) { const a = document.createElement('a'); a.href = dados.mapa; a.target = '_blank'; a.rel = 'noopener noreferrer'; a.textContent = 'Abrir mapa ↗'; contact.append(a); }
 
 // A navegação para orações abre o respectivo painel nativo <details>.
 document.querySelectorAll('.prayer-nav a').forEach(a => a.addEventListener('click', () => {
